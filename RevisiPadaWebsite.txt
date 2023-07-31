@@ -1,0 +1,6 @@
+Pada website yang sekarang ada beberapa yang dilakukan revisi sesuai review submission sebelumnya, sebagai berikut:
+1. Sudah memiliki elemen Header, Footer, Main, Article, dan Aside.
+2. Masing-masing elemen wajib berisi konten yang peruntukkannya sesuai dengan elemen tersebut
+3. Mengubah penggunaan Javascript
+4. Perubahan Navbar yang lebih simple supaya tidak berantakan
+5. Pengubahan posisi Aside ke Main.

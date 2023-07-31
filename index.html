@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/bde36fa7c1.js" crossorigin="anonymous"></script>
+        <title>Pengenalan rokok</title> 
+    </head>
+    <body>
+<!----------------------------HEADER------------------------------>
+        <header>
+            <div class="navbar">
+                <div class="logo"><a href="#">Smoke Free</a></div>
+                <ul class="links">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">JENIS PEROKOK</a></li>
+                    <li><a href="#">PENYAKIT</a></li>
+                    <li><a href="#">CALL CENTER</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                 </ul>
+                 <div class="toggle_btn">
+                    <i class="fa-solid fa-bars"></i>
+                 </div>
+            </div>
+            <div class="dropdown_menu">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">JENIS PEROKOK</a></li>
+                <li><a href="#">PENYAKIT</a></li>
+                <li><a href="#">CALL CENTER</a></li>
+                <li><a href="#">ABOUT US</a></li>
+            </div>
+
+        </header>
+        <section class="home" id="home">
+            <div class="home-text">
+                <h1>Jangan Merokok <br> Tidak Baik Untuk Kesehatan</h1>
+                <p>Lindungi Kesahatan Anda dan Orang di Sekitar Anda</p>
+            </div>
+        </section>
+
+<!----------------------------JAVASCRIPT------------------------------>
+        <script>
+
+            const toggleBtn = document.querySelector('.toggle_btn')
+            const toggleBtnIcon = document.querySelector('.toggle_btn i')
+            const dropwDownMenu = document.querySelector('.dropdown_menu')
+
+            toggleBtn.onclick = function(){
+                dropwDownMenu.classList.toggle('open')
+                const isOpen = dropwDownMenu.classList.contains('open')
+
+                toggleBtnIcon.classList = isOpen
+                    ? 'fa-solid fa-times'
+                    : 'fa-solid fa-bars'
+            }
+        </script>
+
+<!----------------------------MAIN------------------------------>
+
+        <main>
+<!----------------------------PROFILE------------------------------>
+            <aside>
+                <div class="profile">
+                    <img src="img/profile.png">
+                    <h1>Profil</h1>
+                    <p>Noveliyo Frendika</p><br>
+                    <p>Jakarta 02 November 2001</p><br>
+                    <p>CC-32</p>
+                </div>
+            </aside>
+<!----------------------------JENIS PEROKOK------------------------------>
+            <article>
+            <section class="container">
+                <div class="text">
+                    <h2>Jenis Perokok</h2>
+                </div>
+                <div class="row-item">
+                    <div class="container-box">
+                        <h4> Perokok Aktif</h4>
+                        <p>Perokok aktif adalah seseorang yang sengaja menghisap lintingan tembakau yang dibungkus kertas biasanya. Secara langsung mereka juga menghirup asap rokok yang mereka hembuskan dari mulut mereka. Tujuan mereka untuk merokok adalah menghangatkan badan mereka dari suhu yang dingin. Tetapi sekarang banyak disalah gunakan oleh para anak remaja untuk membuktikan diri mereka bahwa merokok adalah keren.</p>
+                    </div>
+                </div>
+
+                <div class="row-item">
+                    <div class="container-box">
+                        <h4> Perokok Pasif</h4>
+                        <p>Perokok Pasif adalah seseorang atau sekelompok orang yang menghirup asap rokok orang lain. Telah terbukti bahwa perokok pasif mengalami risiko gangguan kesehatan yang sama seperti perokok aktif, yaitu orang yang menghirup asap rokoknya sendiri.</p>
+                    </div>
+                </div>
+            </section>
+<!----------------------------PENYAKIT------------------------------>   
+                <section class="container">
+                    <div class="text">
+                        <h2>Jenis Perokok</h2>
+                    </div>
+                    <div class="row-item">
+                        <div class="container-box">
+                            <h4>Perokok AktifGangguan Paru - Paru</h4>
+                            <p>Banyak gangguan paru - paru yang menghantui oleh seorang perokok aktif, seperti bronkitis kronis, emfisema, hingga kanker paru. Kanker paru sebuah panyakit yang sangat serius dan umum dialami oleh perokok aktif, tetapi seseorang yang tidak berokok memiliki potensi untuk kena kanker paru</p>
+                        </div>
+                    </div>
+
+                    <div class="row-item">
+                        <div class="container-box">
+                            <h4>Gangguan Lambung</h4>
+                            <p>Kebiasaan merokok dengan gangguan lambung berkaitan erat, hal ini dikarenakan sphincter esofagus pada bagian bawah mengalami pelemahan akibat kandungan nikotin dan kebiasaan merokok yang membuat produksi asam lambung lebih banyak dari seharusnya.</p>
+                        </div>
+                    </div>
+
+                    <div class="row-item">
+                        <div class="container-box">
+                            <h4>Tingkat Kesuburan</h4>
+                            <p>Kebiasaan merokok bisa mengganggu tingkat kesuburan seseorang. Pada pria, kebiasaan merokok dapat meningkatkan risiko impotensi, mengurangi produksi sperma dan kanker testis. Pada wanita juga bisa mengalami gangguan kesuburan dan risiko kanker serviks. Hal ini tejadi karena merokok membuat sistem imun tubuh melemah dan mengurnagi kemampuan tubuh untuk melakukan infeksi HPV yang menjadi penyebab kanker serviks pada wanita.</p>
+                        </div>
+                    </div>
+                </section>
+<!----------------------------CALL CENTER------------------------------>
+                <section class="container">
+                    <div class="text">
+                        <h2>CALL CENTER</h2>
+                    </div>
+
+                    <div class="row-item">
+                        <div class="container-box">
+                            <img src="img/20180526105321.png">
+                            <h4>Tingkat Kesuburan</h4>
+                            <p>Pemerintah Indonesia melalui Kementerian Kesehatan memiliki layanan QUIT LINE BERHENTI MEROKOK yang bisa diakses oleh semua orang melalui nomor telepon 0-800-177-6565 pada hari Senin - Sabtu Pukul 08.00 s.d 16.00. Melalui komunikasi via telepon, masayarakat Indonesia yang ingin berhenti merokok diberikan konseling dan bimbingan, serta memberikan rujukan yang dibutuhkan tindak lanjut.</p>
+                        </div>
+                    </div>
+                </section>
+            </article>
+
+        </main>
+<!----------------------------FOOTER------------------------------>
+        <footer>
+            <section class="footer">
+                <section class="container">
+                    <div class="text">
+                        <h2>ABOUT US</h2>
+                    </div>
+                <div class="row-item">
+                    <div class="container-box">
+                        <p>Website ini difokuskan untuk memberikan pengetahuan mengenai merokok untuk kesehatan dan lain - lain. Untuk kedepannya website ini bisa lebih berkembang ke lebih baik.</p>
+                        <div class="icons">
+                            <i class="fa fa-facebook"></i>
+                            <i class="fa fa-twitter"></i>
+                            <i class="fa fa-instagram"></i>
+                            <i class="fa fa-linkedin"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </footer>
+
+    </body>
+</html>

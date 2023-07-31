@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', cursive;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #fff;
+    color: #fff;
+}
+
+li{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #C69749;
+    font-size: 1rem;
+}
+
+a:hover{
+    color: #78c3c9;
+}
+/*----------HEADER----------*/
+header{
+    display: inline;
+    position: fixed;
+    padding: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 30px 18%;
+    transition: ease .40s;
+}
+
+
+section{
+    padding: 80px 18%;
+}
+.home{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(img/background.png);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+.home-text h1{
+    font-size: 30px;
+    line-height: 1.2;
+    color: #C69749;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+.home-text p{
+    color: #C69749;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 39px;
+    margin-bottom: 50px;
+}
+
+.navbar{
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #282A3A;
+    box-sizing: border-box;
+}
+
+.navbar .logo a{
+    font-size: 24px;
+    font-weight: bold;
+    color: #C69749;
+}
+
+.navbar .links{
+    display: flex;
+    gap: 32px;
+}
+
+.navbar .toggle_btn{
+    color: #C69749;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+
+/*----------DROPDOWN MENU----------*/
+.dropdown_menu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: #000000;
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+}
+
+.dropdown_menu.open{
+    height: 240px;
+}
+
+.dropdown_menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #C69749;
+}
+
+
+/*----------RESPONSIVE DESGIN----------*/
+@media(max-width: 992px){
+    .navbar .links{
+        display: none;
+    }
+
+    .navbar .toggle_btn {
+        display: block;
+    }
+
+    .dropdown_menu {
+        display: block;
+    }
+}
+
+/*----------MAIN----------*/
+.text h2{
+    color: #C69749;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.1;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background: #735F32;
+}
+.row-item{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    grid-gap: 1.5rem;
+    align-items: center;
+    text-align: center;
+    margin-top: 2rem;
+}
+.container-box{
+    background: #735F32;
+    border: 1px solid #f0eded;
+    padding: 50px 10px;
+    border-radius: 3px;
+    transition: all 1s ease 0s;
+}
+.container-box img{
+    text-align: center;
+    height: 50%;
+    width: 50%;
+}
+.container-box h4{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #C69749;
+}
+.container-box p{
+    font-size: 16px;
+    color: #C69749;
+}
+
+/*--------ASIDE------*/
+
+.profile{
+    float: right;
+    width: 15%;
+    padding-left: 20px;
+    box-sizing: border-box;
+    background-color: #735F32;
+}
+.profile h1{
+    font-size: 30px;
+    font-weight: 200;
+    color: #C69749;
+}
+.profile p{
+    font-size: 15px;
+    font-weight: 400;
+    text-align: left;
+    color: #C69749;
+}
+.profile img{
+    height: 100%;
+    width: 80%;
+}
+
+
+/*----------footer------------*/
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 40px;
+}
+.icons .fa{
+    color: #C69749;
+    font-size: 30px;
+    margin: 0 13px;
+    cursor: pointer;
+    pad: 18px 0;
+}
+

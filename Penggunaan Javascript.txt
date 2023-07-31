@@ -1,0 +1,19 @@
+<script>
+
+            const toggleBtn = document.querySelector('.toggle_btn')
+            const toggleBtnIcon = document.querySelector('.toggle_btn 		i')
+            const dropwDownMenu = document.querySelector		('.dropdown_menu')
+
+            toggleBtn.onclick = function(){
+                dropwDownMenu.classList.toggle('open')
+                const isOpen = dropwDownMenu.classList.contains		('open')
+
+                toggleBtnIcon.classList = isOpen
+                    ? 'fa-solid fa-times'
+                    : 'fa-solid fa-bars'
+            }
+</script>
+
+Keterangan:
+Dalam website ini saya mengubah penggunaan javascript dari website sebelumnya. Disini saya menggunakan Javascript untuk membuat adanya dropdown menu jika halaman diperkecil. Abis itu saya menggunakan button 'fa-solid fa-bars' untuk menjadi button open dari dropdown menus saya dan button 'fa-solid fa-times' untuk menjadi button close dari dropdown menu.
+ 
